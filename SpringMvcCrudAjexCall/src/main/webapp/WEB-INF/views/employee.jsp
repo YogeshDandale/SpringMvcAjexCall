@@ -24,6 +24,7 @@ $('#saveEmployee').click(function() {
 					course : $("#course").val()
 				},
 				success : function(result) {
+					alert(result)
 					getAllrecord()
 					$('#employeeForm')[0].reset()
 				},
@@ -110,6 +111,7 @@ function updateEmployeebtn() {
 			course : $("#course").val()
 		},
 		success : function(result) {
+			alert(result)
 			getAllrecord();
 
 			$('#saveEmployee').show();
